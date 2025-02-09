@@ -3,7 +3,7 @@
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
 # The problem
-Client was not able to render subdomains as server side components in NuxtJS
+Client was not able to render subdomains as server side components in NuxtJS. subdomains are located in pages/subdomains/** folder and work properly with ssr, but not with pre-rendering
 
 # Solution
 It was solved using server middleware, client global middleware and nuxt.config hooks with routing rules
