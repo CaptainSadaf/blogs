@@ -2,6 +2,21 @@
 
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
+# The problem
+Client was not able to render subdomains as server side components in NuxtJS
+
+# Solution
+It was solved using server middleware, client global middleware and nuxt.config hooks with routing rules
+/server/middleware/subdomain.ts
+/middleware/subdomain.global.ts
+nuxt.config hooks
+
+Now this solution should work with static pages and render subdomains as server side pages dynamically.
+sadaf.localhost:3000
+sadaf.localhost:3000/blog/article1
+
+alex.localhost:3000/blog/article1
+
 ## Setup
 
 Make sure to install dependencies:
